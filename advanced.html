@@ -1,70 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            .h {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  float: right;
-  border-radius: 12px;
-  margin: 5px;
-  transition-duration: 0.4s;
-  }
-  .h:hover {
-    background-color: blue;
-            }
-  h1 {
- text-align: center;
- vertical-align: middle;
- margin: 0px;
- font-size: 30px;
- color: blue;
- }
- .m {
- background-color: blue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
-  margin: 5px;
-  transition-duration: 0.4s;
-  }
-  .m:hover {
-    background-color: #ADD8E6;
-            }
-
-
-
-        </style>
+        <title> Advanced google search</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: rgb(203, 220, 247);">
-    <div>
-        <form action="index.html">
-            <button class="h" type="submit">google search</button>
-        </form>
 
-        <h1> ADVANCED GOOGLE SEARCH</h1>
-    </div>
-     <form action="https://google.com/search">
-             All these words:<input type="text" name="as_q" >
-            <br><br>Exact word/phrase:<input type="text" name="as_epq" >
-            <br><br>Any of these words:<input type="text" name="as_oq" >
-            <br><br>None of these words:<input type="text" name="as_eq" >
-           <br><br><button class="m" type="submit">advanced search</button>
+    <body>
+        <div id="nav">
+           <form action="index.html">
+                <button class="buttons" type="submit" style="background:#AEAEAE">Google Search</button>
+           </form>
+        </div>
 
-        </form>
+        <div id="middle">
+            <div id="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="300px" height="100px">
+                Advanced Search
 
+            </div>
+           <div id="searchbarcontainer">
+                <form action="https://google.com/search">
+             All these words:<input class="bar" type="text" name="as_q" >
+            <br><br>Exact word/phrase:<input class="bar" type="text" name="as_epq" >
+            <br><br>Any of these words:<input class="bar" type="text" name="as_oq" >
+            <br><br>None of these words:<input class="bar" type="text" name="as_eq" >
+                    <div id="buttons">
+           <br><br><button class="buttons" type="submit">advanced search</button>
+                    </div>
+                </form>
+                <h3> Cs50w: Project 0 Search By Hamza Farag </h3>
+
+            </div>
+
+        </div>
     </body>
+
 </html>
